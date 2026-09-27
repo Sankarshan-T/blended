@@ -7,7 +7,7 @@ export default function Home() {
         <>
             <div
                 aria-hidden="true"
-                className="pointer-events-none fixed inset-0 z-0 bg-(image:--background)"
+                className="pointer-events-none fixed inset-0 z-0 grid-bg"
             />
             <main className="relative z-10 min-h-screen bg-transparent text-foreground">
                 <header className="mx-auto w-[80%] border top-3 rounded-3xl shadow-sm shadow-primary bg-background/90 sticky border-border z-999">
@@ -20,7 +20,7 @@ export default function Home() {
                             <a className="hover:text-primary" href="#section-two">Rewards</a>
                             <a className="hover:text-primary" href="#faq">FAQ</a>
                         </div>
-                        <a className="rounded-md bg-primary px-4 py-2 text-sm font-medium text-background hover:bg-primary-hover" href="#contact">
+                        <a className="rounded-md bg-primary px-4 py-2 text-sm font-medium text-background hover:bg-primary-hover" href="https://rsvp.soon.it/blended/">
                             RSVP
                         </a>
                     </nav>
@@ -37,7 +37,7 @@ export default function Home() {
                             Here, in <span className="text-primary">blended</span>, you create a 3d project using only blender and its amazing capabilities.
                         </p>
                         <div className="mt-8 flex flex-wrap gap-3 w-full justify-end">
-                            <a className="rounded-md hover:-rotate-x-30 hover:shadow-neo hover:border bg-primary px-5 py-3 text-sm font-medium text-primary-foreground! transition hover:bg-primary-hover" href="#">
+                            <a className="rounded-md hover:-rotate-x-30 hover:shadow-neo hover:border bg-primary px-5 py-3 text-sm font-medium text-primary-foreground! transition hover:bg-primary-hover" href="https://rsvp.soon.it/blended/">
                                 RSVP for blended!
                             </a>
                             <a className="rounded-md hover:-rotate-x-30 hover:shadow-neo-secondary border border-secondary px-5 py-3 text-sm text-secondary duration-200 hover:bg-secondary font-bold hover:text-secondary-foreground!" href="#section-one">
