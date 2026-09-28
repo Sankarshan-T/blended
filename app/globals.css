@@ -35,8 +35,7 @@
     --color-muted: var(--muted);
     --color-surface: var(--surface);
     --color-border: var(--border);
-    --font-sans: var(--font-geist-sans);
-    --font-mono: var(--font-geist-mono);
+    --font-sans: var(--font-bubblegum-sans);
 }
 
 *,
@@ -83,7 +82,7 @@ body {
     min-height: 100vh;
     margin: 0;
     color: var(--foreground);
-    font-family: var(--font-geist-sans), sans-serif;
+    font-family: var(--font-bubblegum-sans), sans-serif;
     text-rendering: optimizeLegibility;
 }
 
