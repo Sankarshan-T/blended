@@ -33,7 +33,7 @@ export default function Home() {
                             build anything in <span className="text-primary hover:text-primary-hover transition-all"><a href="https://www.blender.org/"> blender</a></span>
                         </h1>
                         <p className="mt-6 max-w-xl text-lg leading-8 text-muted text-right">
-                            If you didnt know, Blender is a free and open-source 3D graphics software that can do many things!
+                            If you didnt know, Blender is a free and open source 3D graphics software that can do many things!
                             Here, in <span className="text-primary">blended</span>, you create a 3d project using only blender and its amazing capabilities.
                         </p>
                         <div className="mt-8 flex flex-wrap gap-3 w-full justify-end">
@@ -84,9 +84,9 @@ export default function Home() {
                                     model: "/models/particles.glb",
                                 },
                             ].map((example) => (
-                                <article className="group overflow-hidden rounded-2xl border border-border bg-background/70 transition duration-300 hover:-rotate-x-20 hover:shadow-neo hover:border-primary/70" key={example.title}>
+                                <article className="group overflow-hidden rounded-xl border border-border bg-background/70 transition duration-300 hover:-rotate-x-20 hover:shadow-neo hover:border-primary/70" key={example.title}>
                                     <div className="border-b border-border bg-(image:--background) p-2">
-                                        <div className="overflow-hidden rounded-xl border border-border bg-background">
+                                        <div className="overflow-hidden rounded-md border border-border bg-background">
                                             {example.model ?
                                                 <InteractiveModel scenepath={example.model} color />
                                                 :
@@ -138,9 +138,9 @@ export default function Home() {
                                     image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmV3MM7j1vLOQgQ5o3WHUAzOpgeu1PK8z75f8iQZeb4A&s=10",
                                 },
                             ].map((item) => (
-                                <article className="group overflow-hidden rounded-2xl border border-border bg-background/70 transition duration-300 hover:-rotate-x-20 hover:shadow-neo-secondary hover:border-secondary/70" key={item.title}>
+                                <article className="group overflow-hidden rounded-xl border border-border bg-background/70 transition duration-300 hover:-rotate-x-20 hover:shadow-neo-secondary hover:border-secondary/70" key={item.title}>
                                     <div className="border-b border-border bg-(image:--background) p-2">
-                                        <div className="overflow-hidden rounded-xl border border-border bg-background">
+                                        <div className="overflow-hidden rounded-md border border-border bg-background">
                                             <img src={item.image} alt="" />
                                         </div>
                                     </div>
