@@ -19,7 +19,7 @@ export default function Home() {
                         <div className="hidden gap-6 text-sm text-muted sm:flex">
                             <a className="hover:text-primary" href="#examples">Examples</a>
                             <a className="hover:text-primary" href="#rewards">Rewards</a>
-                            <a className="hover:text-primary" href="#faq">FAQ</a>
+                            {/* <a className="hover:text-primary" href="#faq">FAQ</a> */}
                         </div>
                         <a className="rounded-sm bg-primary px-4 py-2 text-sm font-medium text-background hover:bg-primary-hover" href="https://rsvp.soon.it/blended/">
                             RSVP
@@ -142,9 +142,29 @@ export default function Home() {
                                     image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmvf5JAYhto5fIXeHgO0ZOD9rzQZLFtUXvCJvjHHRnYQ&s=10",
                                 },
                                 {
+                                    title: "nvidia rtx 4060 gpu",
+                                    description: "this would definitely run blender at top speeds (and ofc better rendering :D)",
+                                    image: "https://www.theengineerstore.in/cdn/shop/products/Gigabyte-GeForce-RTX-4060-EAGLE-OC-8GB-GDDR6-Graphics-Card-GV-N4060EAGLE-OC-8GD.webp?v=1706692250",
+                                },
+                                {
                                     title: "iPad",
                                     description: "use this for cooler apps you can find on app store to model.",
                                     image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmV3MM7j1vLOQgQ5o3WHUAzOpgeu1PK8z75f8iQZeb4A&s=10",
+                                },
+                                {
+                                    title: "elegoo cc2",
+                                    description: "an awesome 3d printer.",
+                                    image: "https://eu.elegoo.com/cdn/shop/files/CC2-_-260811.jpg?v=1786593948",
+                                },
+                                {
+                                    title: "beats solo 4",
+                                    description: "crazy headphones ooooo",
+                                    image: "https://www.beatsbydre.com/content/dam/beats/web/product/headphones/solo4-wireless/pdp/product-carousel/slate-blue/blue-01-solo4.jpg",
+                                },
+                                {
+                                    title: "and many many more",
+                                    description: "more c0ming soon!!!",
+                                    image: "https://cdn3.emoji.gg/emojis/4081_SoonTM.png",
                                 },
                             ].map((item) => (
                                 <article className="group overflow-hidden rounded-md border border-border bg-background/70 transition duration-300 hover:-rotate-x-20 hover:shadow-neo-secondary hover:border-secondary/70" key={item.title}>
