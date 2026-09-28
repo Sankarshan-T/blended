@@ -17,8 +17,8 @@ export default function Home() {
                             blended
                         </a>
                         <div className="hidden gap-6 text-sm text-muted sm:flex">
-                            <a className="hover:text-primary" href="#section-one">Examples</a>
-                            <a className="hover:text-primary" href="#section-two">Rewards</a>
+                            <a className="hover:text-primary" href="#examples">Examples</a>
+                            <a className="hover:text-primary" href="#rewards">Rewards</a>
                             <a className="hover:text-primary" href="#faq">FAQ</a>
                         </div>
                         <a className="rounded-sm bg-primary px-4 py-2 text-sm font-medium text-background hover:bg-primary-hover" href="https://rsvp.soon.it/blended/">
@@ -41,14 +41,14 @@ export default function Home() {
                             <a className="rounded-sm hover:-rotate-x-30 hover:shadow-neo hover:border bg-primary px-5 py-3 text-sm font-medium text-primary-foreground! transition hover:bg-primary-hover" href="https://rsvp.soon.it/blended/">
                                 RSVP for blended!
                             </a>
-                            <a className="rounded-sm hover:-rotate-x-30 hover:shadow-neo-secondary border border-secondary px-5 py-3 text-sm text-secondary duration-200 hover:bg-secondary font-bold hover:text-secondary-foreground!" href="#section-one">
+                            <a className="rounded-sm hover:-rotate-x-30 hover:shadow-neo-secondary border border-secondary px-5 py-3 text-sm text-secondary duration-200 hover:bg-secondary font-bold hover:text-secondary-foreground!" href="#examples">
                                 Examples
                             </a>
                         </div>
                     </div>
                 </section>
 
-                <section className="border-y border-border bg-surface/15 py-24" id="section-one">
+                <section className="border-y border-border bg-surface/15 py-24" id="examples">
                     <div className="mx-auto max-w-6xl px-6">
                         <div className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
                             <div className="max-w-2xl">
@@ -115,7 +115,7 @@ export default function Home() {
                     </div>
                 </section>
 
-                <section className="border-y border-border bg-surface/15 py-24" id="section-two">
+                <section className="border-y border-border bg-surface/15 py-24" id="rewards">
                     <div className="mx-auto max-w-6xl px-6">
                         <div className="max-w-2xl">
                             <p className="text-sm font-medium uppercase tracking-[0.2em] text-secondary">You get</p>
@@ -172,6 +172,14 @@ export default function Home() {
                         </div>
                     </div>
                 </section>
+                <footer className="h-[30vh] w-full bg-surface/10 backdrop-blur-xs border-t border-border p-5 grid grid-cols-3">
+                    <div className="text-5xl h-full flex items-center justify-center text-primary">HACK CLUB</div>
+                    <div></div>
+                    <div className="h-full flex flex-col items-center justify-center text-secondary gap-5">
+                        <p className="text-sm max-w-[70%] text-white">made by <a className="text-primary hover:text-primary-hover" href="https://hackclub.enterprise.slack.com/team/U096RMRG03G">me</a>, sponsored by...... (noone as of now :( hope we find someone soon)</p>
+                        <p className="text-xs">Credits to giffy for some gifs :D</p>
+                    </div>
+                </footer>
             </main >
         </>
     );
