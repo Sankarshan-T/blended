@@ -1,6 +1,7 @@
 "use client"
 
 import InteractiveModel from "./components/interactive-model";
+import Image from "next/image";
 
 export default function Home() {
     return (
@@ -10,7 +11,7 @@ export default function Home() {
                 className="pointer-events-none fixed inset-0 z-0 grid-bg"
             />
             <main className="relative z-10 min-h-screen bg-transparent text-foreground">
-                <header className="mx-auto w-[80%] border top-3 rounded-3xl shadow-sm shadow-primary bg-background/90 sticky border-border z-999">
+                <header className="mx-auto w-[80%] border top-3 rounded-lg shadow-sm shadow-primary bg-background/90 sticky border-border z-999">
                     <nav className="mx-auto flex max-w-6xl items-center justify-between px-6 py-2">
                         <a className="text-xl font-semibold tracking-tight text-primary" href="#">
                             blended
@@ -20,7 +21,7 @@ export default function Home() {
                             <a className="hover:text-primary" href="#section-two">Rewards</a>
                             <a className="hover:text-primary" href="#faq">FAQ</a>
                         </div>
-                        <a className="rounded-md bg-primary px-4 py-2 text-sm font-medium text-background hover:bg-primary-hover" href="https://rsvp.soon.it/blended/">
+                        <a className="rounded-sm bg-primary px-4 py-2 text-sm font-medium text-background hover:bg-primary-hover" href="https://rsvp.soon.it/blended/">
                             RSVP
                         </a>
                     </nav>
@@ -37,10 +38,10 @@ export default function Home() {
                             Here, in <span className="text-primary">blended</span>, you create a 3d project using only blender and its amazing capabilities.
                         </p>
                         <div className="mt-8 flex flex-wrap gap-3 w-full justify-end">
-                            <a className="rounded-md hover:-rotate-x-30 hover:shadow-neo hover:border bg-primary px-5 py-3 text-sm font-medium text-primary-foreground! transition hover:bg-primary-hover" href="https://rsvp.soon.it/blended/">
+                            <a className="rounded-sm hover:-rotate-x-30 hover:shadow-neo hover:border bg-primary px-5 py-3 text-sm font-medium text-primary-foreground! transition hover:bg-primary-hover" href="https://rsvp.soon.it/blended/">
                                 RSVP for blended!
                             </a>
-                            <a className="rounded-md hover:-rotate-x-30 hover:shadow-neo-secondary border border-secondary px-5 py-3 text-sm text-secondary duration-200 hover:bg-secondary font-bold hover:text-secondary-foreground!" href="#section-one">
+                            <a className="rounded-sm hover:-rotate-x-30 hover:shadow-neo-secondary border border-secondary px-5 py-3 text-sm text-secondary duration-200 hover:bg-secondary font-bold hover:text-secondary-foreground!" href="#section-one">
                                 Examples
                             </a>
                         </div>
@@ -66,32 +67,40 @@ export default function Home() {
                                 {
                                     title: "3d models",
                                     description: "Design anything in the 3d editor of blender.",
-                                    model: "/models/icecream.glb",
+                                    media: "https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExZHdvY2RoNnNtZGczYzdkcnZybm50NHllZG56Z3ptMGU5cDZsZDZocSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/4zFuOaEKf1Ll6/giphy.gif",
+                                    alt: "",
                                 },
                                 {
                                     title: "Animations",
                                     description: "Animate any existing 3d model!!.",
-                                    model: "",
+                                    media: "https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExNnQ0ZDlkNGRmZGlzeTU2NXhtMXdsMDQ4cW1lejdiaHVzNjI1NXk5MiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/xT77Y1T0zY1gR5qe5O/giphy.gif",
+                                    alt: "",
                                 },
                                 {
                                     title: "Character rigging",
                                     description: "Add movement to any 3d model in blender.",
-                                    model: "/models/hand.glb",
+                                    media: "https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExdXh2Y3JvY3RydHBwdXQ2cjRmeXVvMHQ1OGQ3ZzYyemF2YTM5bmFsYiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/bBrfLWeU4piGEOdYel/giphy.gif   ",
+                                    alt: "",
                                 },
                                 {
                                     title: "VFX and graphics",
-                                    description: "Create any 3d graaphic or vfx stuff.",
-                                    model: "/models/particles.glb",
+                                    description: "Create any 3d graphic or vfx stuff.",
+                                    media: "https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExY2sycWg4b3NmcW1rNjh1NGlmYTlybjQzYmhjc2xkb3Vta3RqYWJxZyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/26n6G8lRMOrYC6rFS/giphy.gif",
+                                    alt: "",
                                 },
                             ].map((example) => (
-                                <article className="group overflow-hidden rounded-xl border border-border bg-background/70 transition duration-300 hover:-rotate-x-20 hover:shadow-neo hover:border-primary/70" key={example.title}>
+                                <article className="group overflow-hidden rounded-md border border-border bg-background/70 transition duration-300 hover:-rotate-x-20 hover:shadow-neo hover:border-primary/70" key={example.title}>
                                     <div className="border-b border-border bg-(image:--background) p-2">
-                                        <div className="overflow-hidden rounded-md border border-border bg-background">
-                                            {example.model ?
-                                                <InteractiveModel scenepath={example.model} color />
-                                                :
-                                                <div className="min-h-full border border-muted rounded-lg">No model found</div>
-                                            }
+                                        <div className="relative aspect-4/5 overflow-hidden rounded-sm border border-border bg-background">
+                                            <Image
+                                                src={example.media}
+                                                alt={example.alt}
+                                                fill
+                                                unoptimized
+                                                loading="lazy"
+                                                sizes="(min-width: 1024px) 25vw, (min-width: 768px) 50vw, 100vw"
+                                                className="object-cover"
+                                            />
                                         </div>
                                     </div>
                                     <div className="p-5">
@@ -138,10 +147,18 @@ export default function Home() {
                                     image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmV3MM7j1vLOQgQ5o3WHUAzOpgeu1PK8z75f8iQZeb4A&s=10",
                                 },
                             ].map((item) => (
-                                <article className="group overflow-hidden rounded-xl border border-border bg-background/70 transition duration-300 hover:-rotate-x-20 hover:shadow-neo-secondary hover:border-secondary/70" key={item.title}>
+                                <article className="group overflow-hidden rounded-md border border-border bg-background/70 transition duration-300 hover:-rotate-x-20 hover:shadow-neo-secondary hover:border-secondary/70" key={item.title}>
                                     <div className="border-b border-border bg-(image:--background) p-2">
-                                        <div className="overflow-hidden rounded-md border border-border bg-background">
-                                            <img src={item.image} alt="" />
+                                        <div className="relative aspect-4/3 overflow-hidden rounded-sm border border-border bg-background">
+                                            <Image
+                                                src={item.image}
+                                                alt={`${item.title} reward`}
+                                                fill
+                                                sizes="(min-width: 1024px) 25vw, (min-width: 768px) 50vw, 100vw"
+                                                unoptimized
+                                                loading="lazy"
+                                                className="object-contain p-4"
+                                            />
                                         </div>
                                     </div>
                                     <div className="p-5">

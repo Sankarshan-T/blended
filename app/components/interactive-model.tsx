@@ -40,7 +40,7 @@ export default function InteractiveModel({ scenepath, color }: { scenepath: stri
     }
 
     return (
-        <div className="h-[360px] w-full overflow-hidden rounded-xl">
+        <div className="h-[360px] w-full overflow-hidden rounded-md">
             <Canvas camera={{ position: [0, 0, 4.4], fov: 45 }} dpr={[1, 2]}>
                 <ambientLight intensity={1.2} />
                 {color && <color attach="background" args={["#25262b"]} />}
