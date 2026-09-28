@@ -147,9 +147,9 @@ export default function Home() {
                                     image: "https://www.theengineerstore.in/cdn/shop/products/Gigabyte-GeForce-RTX-4060-EAGLE-OC-8GB-GDDR6-Graphics-Card-GV-N4060EAGLE-OC-8GD.webp?v=1706692250",
                                 },
                                 {
-                                    title: "iPad",
-                                    description: "use this for cooler apps you can find on app store to model.",
-                                    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmV3MM7j1vLOQgQ5o3WHUAzOpgeu1PK8z75f8iQZeb4A&s=10",
+                                    title: "switch 2",
+                                    description: "get inspired by better 3d games....",
+                                    image: "https://www.nistore.in/wp-content/uploads/2025/05/switch-2-2.webp",
                                 },
                                 {
                                     title: "elegoo cc2",
@@ -158,7 +158,7 @@ export default function Home() {
                                 },
                                 {
                                     title: "beats solo 4",
-                                    description: "crazy headphones ooooo",
+                                    description: "listen to some music oooooooo...",
                                     image: "https://www.beatsbydre.com/content/dam/beats/web/product/headphones/solo4-wireless/pdp/product-carousel/slate-blue/blue-01-solo4.jpg",
                                 },
                                 {
@@ -169,7 +169,7 @@ export default function Home() {
                             ].map((item) => (
                                 <article className="group overflow-hidden rounded-md border border-border bg-background/70 transition duration-300 hover:-rotate-x-20 hover:shadow-neo-secondary hover:border-secondary/70" key={item.title}>
                                     <div className="border-b border-border bg-(image:--background) p-2">
-                                        <div className="relative aspect-4/3 overflow-hidden rounded-sm border border-border bg-background">
+                                        <div className="relative aspect-4/3 overflow-hidden bg-background">
                                             <Image
                                                 src={item.image}
                                                 alt={`${item.title} reward`}
