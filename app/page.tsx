@@ -132,9 +132,8 @@ export default function Home() {
                                     image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzQnDKTpCKAWPWkq-RJsc-7fsSpyn0kbSdSruRe-aJVQ&s=10",
                                 },
                                 {
-                                    title: "Pen Tablet",
-                                    description: "make your sculpting easy!!",
-                                    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSL6YdNiKuPv6sGoqAmCx2tWOqc85iNvma9hSgWPONA8A&s=10",
+                                    title: "the og blender :D",
+                                    image: "https://instaplay.co.in/cdn/shop/files/INSTA-NWNUTRI-BLNDR-BKSLVR_3.jpg?v=1783674179&width=1445",
                                 },
                                 {
                                     title: "3d mouse",
